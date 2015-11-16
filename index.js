@@ -4,9 +4,9 @@ var path = require('path')
   , config = null
 
 try {
-  config = require('../config.json')
+  config = require('../../config.json')
 } catch (e) {
-  logger.error('A valid config.json must exist at: ' + path.resolve(__dirname + '/../config.json'))
+  logger.error('A valid config.json must exist at: ' + path.resolve(__dirname + '/../../config.json'))
   process.exit(1)
 }
 
